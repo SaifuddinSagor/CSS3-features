@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Overflow</title>
+    <style>
+        .box{
+            width: 300px;
+            height: 300px;
+            border: 2px solid tan;
+            /* overflow: hidden;
+            text-overflow: hidden;
+            overflow: scroll; */
+            overflow-y: auto;
+
+        }
+        .ellipsis{
+            border: 1px solid salmon;
+            width: 300px;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            /* text-overflow: clip; */
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <p title="I am a searious learning. Iam inveting at least 6-8hr every single day.NO gap at all." class="ellipsis">I am a searious learning. Iam inveting at least 6-8hr every single day.NO gap at all.</p>
+    </header>
+    <section>
+        <div class="box">
+            <h3>My Text box-1</h3>
+            <p>
+                HTML (HyperText Markup Language) is the standard language used to create the structure of web pages. It
+                allows developers to organize content using predefined tags and attributes. Tags like are essential building blocks of an HTML document. HTML is responsible for defining
+                elements such as text, images, links, forms, and multimedia on a web page. It is a static
+                language, meaning it focuses on content structure rather than dynamic functionality. HTML
+                files are saved with a .html or .htm extension and can be viewed in any web browser. As the
+                foundation of web development, it ensures that content is properly structured and
+                accessible, laying the groundwork for styling with CSS and interactivity with JavaScript.
+            </p>
+        </div>
+        <div class="box">
+            <h3>My Test box-2</h3>
+            <p>
+                CSS3 (Cascading Style Sheets Level 3) is the latest version of CSS, designed to enhance the styling and
+                layout capabilities of web development. It introduced several advanced features, including media queries
+                for responsive designs, allowing web pages to adapt to different screen sizes seamlessly. CSS3 also
+                brought powerful tools like transitions, animations, and keyframes, enabling smooth visual effects
+                without relying on JavaScript. New layout models, such as Flexbox and Grid, have simplified the process
+                of creating responsive and flexible designs.
+            </p>
+        </div>
+
+    </section>
+</body>
+
+</html>
